@@ -39,11 +39,4 @@ Anagram.prototype.returnAnagram = function() {
   };
 };
 
-
-// creating the runtime functionality
-// test = new Anagram()
-// test.returnAnagram()
-
-
-
 module.exports = Anagram;

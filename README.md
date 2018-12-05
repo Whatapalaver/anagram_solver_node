@@ -17,28 +17,26 @@ You may also wish to consider how your code handles edge cases such as hyphenate
 
 ```
 As a player
-
+Who fancies cheating at scrabble
+I would like to generate a list of anasgrams for a given word
 ```
 
 ```
 As a player
-
-```
-
-```
-As a player
+Who would like to remain covert while cheating at scrabble
+I would like a simple command line interface
 
 ```
 
 ## _Discussion_  
-
----
 
 ### _How I approached the problem?_
 
 As you are looking for familiarity with javascript I decided that I would create an initial solution in node.js with jasmine for testing. This would allow me to generate a simple CLI interpretation in the time allotted. I then intended to produce a second interpretation in React, to demonstrate my ability to use frontend frameworks.
 
 First code written was the test for ordering characters in a word.
+
+I initially used a simple wordlist for testing purposes and then brought in the supplied dictionary list when I had the functionality working.
 
 ### _Key design decisions and alternatives did considered_
 
@@ -48,7 +46,6 @@ I spent some time thinking about the challenge before I started, I wanted to con
 - amend the allowed wordlist to a key value pair combination with the key being the word sorted alphabetically by character. That would allow me to apply a similar sorting to the submitted word and just extract matches from the wordlist - sounds better...
 
 I also needed to decide how to deal with non-alphanumeric characters such as hyphens and apostrophes. In the short term I decided it might be sensible to exclude these from consideration.
-
 
 ### _How do I envision the solution evolving in the future?_
 
