@@ -5,8 +5,12 @@ function Anagram(word) {
 
 Anagram.prototype.alphabeticOrder = (word) => {
   if (!word) { return; }
-  sortedWord = word.split('').sort().join('');
+  sortedWord = word.replace(/\W/g, '').toLowerCase().split('').sort().join('');
   return sortedWord;
 }
+
+
+// test = new Anagram('')
+// console.log(test.alphabeticOrder("Angela's coat"))
 
 module.exports = Anagram;

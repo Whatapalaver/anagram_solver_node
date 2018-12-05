@@ -38,7 +38,7 @@ As a player
 
 As you are looking for familiarity with javascript I decided that I would create an initial solution in node.js with jasmine for testing. This would allow me to generate a simple CLI interpretation in the time allotted. I then intended to produce a second interpretation in React, to demonstrate my ability to use frontend frameworks.
 
-First code written was the test for .....
+First code written was the test for ordering characters in a word.
 
 ### _Key design decisions and alternatives did considered_
 
@@ -61,11 +61,11 @@ My immediate next step is to create an interactive GUI.
 To Use
 ---
 
-- Clone or fork this project `git clone https://github.com/Whatapalaver/anagram_solver_cli.git`
-- Change into the directory `cd anagram_solver_cli`
+- Clone or fork this project `git clone https://github.com/Whatapalaver/anagram_solver_node.git`
+- Change into the directory `cd anagram_solver_node`
 - Install dependencies `npm install`
 
 To test
 ---
 
-- `npm run test` (opens in browser)
+- `npm run test` (runs jasmine in CLI for Node.js)
