@@ -64,6 +64,7 @@ To Use
 - Clone or fork this project `git clone https://github.com/Whatapalaver/anagram_solver_node.git`
 - Change into the directory `cd anagram_solver_node`
 - Install dependencies `npm install`
+- You can run from the command line using the test word as an argument eg: `node ./src/Main.js cat` This would return the anagrams for "cat"
 
 To test
 ---

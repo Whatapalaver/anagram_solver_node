@@ -4,7 +4,7 @@ const dictionary = require('./dictionary');
 const dictionaryArray = dictionary.strData.split(/\s/);
 
 
-function Anagram(word) {
+function Anagram(word = process.argv[2]) {
   this.word = word;
   this.anagrams = [];
 }
@@ -34,18 +34,16 @@ Anagram.prototype.returnAnagram = function() {
     console.log(`There are no anagrams for ${this.word}`)
     return '';
   } else {
-    console.log('Here are the anagrams for ${this.word}: ', potentialAnagrams.join(', '))
+    console.log(`Here are the anagrams for ${this.word}: `, potentialAnagrams.join(', '))
     return potentialAnagrams.join(', ')
   };
 };
 
 
-
-// test = new Anagram('act')
-// group = test.dictionaryGrouper(dictionaryArray)
-
-// console.log(group)
-// console.log(group['enoz'])
+// creating the runtime functionality
+// test = new Anagram()
 // test.returnAnagram()
+
+
 
 module.exports = Anagram;
