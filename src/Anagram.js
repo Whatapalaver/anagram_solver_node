@@ -1,4 +1,8 @@
-const tempDictionary = ['zone', 'act', 'cat', 'tac', 'art', 'rat', 'tar', 'spar', 'rasp', 'pars', 'raps', 'shed']
+//import the wordlist
+const dictionary = require('./dictionary');
+//convert wordlist string to array
+const dictionaryArray = dictionary.strData.split(/\s/);
+
 
 function Anagram(word) {
   this.word = word;
@@ -24,13 +28,13 @@ Anagram.prototype.alphabeticOrder = function(word) {
 
 Anagram.prototype.returnAnagram = function() {
   let orderedTestWord = this.alphabeticOrder(this.word)
-  let groupedDictionary = this.dictionaryGrouper(tempDictionary)
+  let groupedDictionary = this.dictionaryGrouper(dictionaryArray)
   let potentialAnagrams = groupedDictionary[orderedTestWord]
   if (!potentialAnagrams || potentialAnagrams.length === 1) {
     console.log(`There are no anagrams for ${this.word}`)
     return '';
   } else {
-    console.log('Here are the anagrams: ', potentialAnagrams.join(', '))
+    console.log('Here are the anagrams for ${this.word}: ', potentialAnagrams.join(', '))
     return potentialAnagrams.join(', ')
   };
 };
@@ -38,7 +42,7 @@ Anagram.prototype.returnAnagram = function() {
 
 
 // test = new Anagram('act')
-// group = test.dictionaryGrouper(tempDictionary)
+// group = test.dictionaryGrouper(dictionaryArray)
 
 // console.log(group)
 // console.log(group['enoz'])

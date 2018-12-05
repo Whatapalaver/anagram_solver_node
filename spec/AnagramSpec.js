@@ -40,7 +40,7 @@ describe("Anagram", function() {
 
   describe("returnAnagram", function() {
     it("returns a list of valid anagrams", function() {
-      expect(newAnagram.returnAnagram()).toMatch('act, cat, tac');
+      expect(newAnagram.returnAnagram()).toMatch('ACT, ATC, Act, CAT, Cat, act, cat');
     });
     it("throws an error for words without an anagram", function() {
       let invalidWord = new Anagram('at')
