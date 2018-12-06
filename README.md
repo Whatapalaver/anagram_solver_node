@@ -32,7 +32,7 @@ I would like a simple command line interface
 
 ### _How I approached the problem?_
 
-As you are looking for familiarity with javascript I decided that I would create an initial solution in node.js with jasmine for testing. This would allow me to generate a simple CLI interpretation in the time allotted. I then intended to produce a second interpretation in React, to demonstrate my ability to use frontend frameworks.
+As the test was looking for familiarity with javascript I decided that I would create an initial solution in node.js with jasmine for testing. This would allow me to generate a simple CLI interpretation in the time allotted. I then intended to produce a second interpretation in React, to demonstrate my ability to use frontend frameworks.
 
 First code written was the test for ordering characters in a word.
 
@@ -49,7 +49,7 @@ I also needed to decide how to deal with non-alphanumeric characters such as hyp
 
 ### _How do I envision the solution evolving in the future?_
 
-Future refactoring would relate to performance improvements. Ideally looping would be minimised over such a large dataset. Funtional methods are likely to be more efficient.
+Future refactoring would relate to performance improvements. Ideally looping would be minimised over such a large dataset. At the moment my groupedDictionary is created everytime I submit a solution. While the time taken is tolerable on my laptop there may be some considerable delay over a network.
 
 If I kept to similar approach of reordering the wordlist by sorted characters, there might be a further efficiency gain if I split further into word length, thereby minimising the dataset for matching.
 
